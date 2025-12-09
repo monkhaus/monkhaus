@@ -1,0 +1,76 @@
+name: Update Repo Freshness
+
+on:
+  schedule:
+    - cron: '0 8 * * *' # Runs every day at 8am
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Generate Repo List
+        uses: actions/github-script@v6
+        with:
+          script: |
+            // 1. Fetch all repos for user
+            const repos = await github.paginate(github.rest.repos.listForUser, {
+              username: context.repo.owner,
+              sort: 'updated',
+              direction: 'desc',
+              per_page: 100
+            });
+
+            // 2. Filter logic (No forks, no archived)
+            const myRepos = repos.filter(r => !r.fork && !r.archived);
+
+            // 3. Helper to format date
+            const timeSince = (date) => {
+              const seconds = Math.floor((new Date() - new Date(date)) / 1000);
+              const days = Math.floor(seconds / 86400);
+              return days;
+            };
+
+            // 4. Build the Markdown Table
+            let mdContent = "| Status | Repository | Last Updated |\n| :---: | :--- | :--- |\n";
+            
+            myRepos.forEach(repo => {
+              const days = timeSince(repo.updated_at);
+              let status = "🟢"; // Good
+              if (days > 7) status = "🟡"; // Warning (1 week)
+              if (days > 30) status = "🔴"; // Danger (1 month)
+              if (days > 90) status = "💀"; // Dead? (3 months)
+
+              mdContent += `| ${status} | [**${repo.name}**](${repo.html_url}) <br> _${repo.description || ''}_ | ${days} days ago |\n`;
+            });
+
+            // 5. Read current README
+            const fs = require('fs');
+            const readmePath = 'README.md';
+            let readme = fs.readFileSync(readmePath, 'utf8');
+
+            // 6. Replace content between markers
+            const startMarker = '';
+            const endMarker = '';
+            
+            const regex = new RegExp(`${startMarker}[\\s\\S]*${endMarker}`);
+            const newContent = `${startMarker}\n\n${mdContent}\n${endMarker}`;
+            
+            if (readme.match(regex)) {
+              readme = readme.replace(regex, newContent);
+              fs.writeFileSync(readmePath, readme);
+            } else {
+              console.log("Markers not found in README.md");
+            }
+
+      - name: Commit and Push
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git add README.md
+          git commit -m "Update repo freshness stats" || exit 0
+          git push
