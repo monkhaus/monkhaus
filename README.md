@@ -2,12 +2,12 @@
 
 | Status | Repository | Last Updated |
 | :---: | :--- | :--- |
-| 🟢 | [**monkhaus**](https://github.com/monkhaus/monkhaus) <br> __ | 0 days ago |
-| 💀 | [**bftl**](https://github.com/monkhaus/bftl) <br> _Big F(un) To Do List_ | 184 days ago |
-| 💀 | [**football_pitch_generation**](https://github.com/monkhaus/football_pitch_generation) <br> __ | 331 days ago |
-| 💀 | [**lawn-mowing-robots**](https://github.com/monkhaus/lawn-mowing-robots) <br> __ | 332 days ago |
-| 💀 | [**simple_multi_agent**](https://github.com/monkhaus/simple_multi_agent) <br> _simple mas_ | 332 days ago |
-| 💀 | [**dockerize_vue_django_tutorial**](https://github.com/monkhaus/dockerize_vue_django_tutorial) <br> _This repository corresponds to this video https://youtu.be/qdfXCwxeTLA_ | 709 days ago |
-| 💀 | [**yig**](https://github.com/monkhaus/yig) <br> _youtube idea generator_ | 975 days ago |
-| 💀 | [**random_youtube_video**](https://github.com/monkhaus/random_youtube_video) <br> __ | 1100 days ago |
+| 🟢 | [**monkhaus**](https://github.com/monkhaus/monkhaus) <br> __ | 1 days ago |
+| 💀 | [**bftl**](https://github.com/monkhaus/bftl) <br> _Big F(un) To Do List_ | 186 days ago |
+| 💀 | [**football_pitch_generation**](https://github.com/monkhaus/football_pitch_generation) <br> __ | 332 days ago |
+| 💀 | [**lawn-mowing-robots**](https://github.com/monkhaus/lawn-mowing-robots) <br> __ | 333 days ago |
+| 💀 | [**simple_multi_agent**](https://github.com/monkhaus/simple_multi_agent) <br> _simple mas_ | 333 days ago |
+| 💀 | [**dockerize_vue_django_tutorial**](https://github.com/monkhaus/dockerize_vue_django_tutorial) <br> _This repository corresponds to this video https://youtu.be/qdfXCwxeTLA_ | 710 days ago |
+| 💀 | [**yig**](https://github.com/monkhaus/yig) <br> _youtube idea generator_ | 976 days ago |
+| 💀 | [**random_youtube_video**](https://github.com/monkhaus/random_youtube_video) <br> __ | 1101 days ago |
 
