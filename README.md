@@ -2,12 +2,12 @@
 
 | Status | Repository | Last Updated |
 | :---: | :--- | :--- |
-| 🟢 | [**monkhaus**](https://github.com/monkhaus/monkhaus) <br> __ | 1 days ago |
-| 💀 | [**bftl**](https://github.com/monkhaus/bftl) <br> _Big F(un) To Do List_ | 229 days ago |
-| 💀 | [**football_pitch_generation**](https://github.com/monkhaus/football_pitch_generation) <br> __ | 375 days ago |
-| 💀 | [**lawn-mowing-robots**](https://github.com/monkhaus/lawn-mowing-robots) <br> __ | 376 days ago |
-| 💀 | [**simple_multi_agent**](https://github.com/monkhaus/simple_multi_agent) <br> _simple mas_ | 376 days ago |
-| 💀 | [**dockerize_vue_django_tutorial**](https://github.com/monkhaus/dockerize_vue_django_tutorial) <br> _This repository corresponds to this video https://youtu.be/qdfXCwxeTLA_ | 753 days ago |
-| 💀 | [**yig**](https://github.com/monkhaus/yig) <br> _youtube idea generator_ | 1019 days ago |
+| 🟢 | [**monkhaus**](https://github.com/monkhaus/monkhaus) <br> __ | 0 days ago |
+| 💀 | [**bftl**](https://github.com/monkhaus/bftl) <br> _Big F(un) To Do List_ | 230 days ago |
+| 💀 | [**football_pitch_generation**](https://github.com/monkhaus/football_pitch_generation) <br> __ | 376 days ago |
+| 💀 | [**lawn-mowing-robots**](https://github.com/monkhaus/lawn-mowing-robots) <br> __ | 377 days ago |
+| 💀 | [**simple_multi_agent**](https://github.com/monkhaus/simple_multi_agent) <br> _simple mas_ | 377 days ago |
+| 💀 | [**dockerize_vue_django_tutorial**](https://github.com/monkhaus/dockerize_vue_django_tutorial) <br> _This repository corresponds to this video https://youtu.be/qdfXCwxeTLA_ | 754 days ago |
+| 💀 | [**yig**](https://github.com/monkhaus/yig) <br> _youtube idea generator_ | 1020 days ago |
 | 💀 | [**random_youtube_video**](https://github.com/monkhaus/random_youtube_video) <br> __ | 1145 days ago |
 
