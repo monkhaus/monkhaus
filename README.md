@@ -3,5 +3,5 @@
 | Status | Repository | Last Updated |
 | :---: | :--- | :--- |
 | 🟢 | [**monkhaus**](https://github.com/monkhaus/monkhaus) <br> __ | 1 days ago |
-| 🟡 | [**atomic**](https://github.com/monkhaus/atomic) <br> __ | 9 days ago |
+| 🟡 | [**atomic**](https://github.com/monkhaus/atomic) <br> __ | 10 days ago |
 
